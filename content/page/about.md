@@ -1,5 +1,5 @@
 ---
-title: "New Page"
+title: "About"
 categories:
 - about
 tags:
