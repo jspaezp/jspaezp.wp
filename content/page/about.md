@@ -36,5 +36,5 @@ A small list of things that I feel passionate about/support:
 
 Here should lie an updated version of my CV for any purpose.
 
-{{< image classes="fancybox center fig50 nocaption" src="/images/Resume08082017.png" thumbnail-height="300px" title="My Resume" >}}
+{{< image classes="fancybox center fig50 nocaption" src="/images/Resume21102018.png" thumbnail-height="300px" title="My Resume" >}}
 <!-- {{< wide-image src="/img/Resume08082017.png" title="My Resume" >}}  -->
