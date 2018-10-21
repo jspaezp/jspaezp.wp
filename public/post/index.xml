@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sebastian Paez&#39;s Webpage</title>
-    <link>https://jspaezp.github.io/</link>
-    <description>Recent content on Sebastian Paez&#39;s Webpage</description>
+    <title>Posts on Sebastian Paez&#39;s Webpage</title>
+    <link>https://jspaezp.github.io/post/</link>
+    <description>Recent content in Posts on Sebastian Paez&#39;s Webpage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Jun 2018 15:01:43 -0400</lastBuildDate>
     
-	<atom:link href="https://jspaezp.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jspaezp.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -87,17 +87,6 @@ tar --exclude-caches \
 &lt;p&gt;I feel like i should be thinking about ways to make easier the management of selective sync and stuff like that, so my laptop does not need to suffer due to the load of syncing wih my desktop computer.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://jspaezp.github.io/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jspaezp.github.io/page/about/</guid>
-      <description>Hello Everyone Welcome to my site, I hope everything is aesthetically pleasable and you find here what you came for, If you have any doubts or would like to contact me feel free to shoot me an email at jspaezp@gmail.com
-A couple of things that you might like to know about me:
- I am originally from Bogota, Colombia. Currently I am a PhD student at Purdue University  A small list of things that I feel passionate about/support:</description>
     </item>
     
   </channel>

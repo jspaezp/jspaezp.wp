@@ -19,5 +19,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Category</title>
+      <link>https://jspaezp.github.io/categories/category/</link>
+      <pubDate>Fri, 15 Jun 2018 15:01:43 -0400</pubDate>
+      
+      <guid>https://jspaezp.github.io/categories/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subcategory</title>
+      <link>https://jspaezp.github.io/categories/subcategory/</link>
+      <pubDate>Fri, 15 Jun 2018 15:01:43 -0400</pubDate>
+      
+      <guid>https://jspaezp.github.io/categories/subcategory/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

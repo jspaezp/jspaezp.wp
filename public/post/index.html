@@ -16,21 +16,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.47.1 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Archives</title>
+    <title>Posts</title>
     <meta name="author" content="J Sebastian Paez">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://jspaezp.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jspaezp.github.io/archives/index.xml">
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jspaezp.github.io/post/index.xml">
     
 
     
     <meta name="description" content="The site for Sebastian&#39;s random thoughts">
     <meta property="og:description" content="The site for Sebastian&#39;s random thoughts">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Archives">
-    <meta property="og:url" content="/archives/">
+    <meta property="og:title" content="Posts">
+    <meta property="og:url" content="/post/">
     <meta property="og:site_name" content="Sebastian Paez&#39;s Webpage">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Sebastian Paez&#39;s Webpage">
@@ -187,34 +187,154 @@
   </div>
 </nav>
 
+      
+
       <div id="main" data-behavior="1"
         class="
                hasCoverMetaIn
                ">
-        <div id="archives" class="main-content-wrap">
-          <form id="filter-form" action="#">
-            <input name="date" type="text" class="form-control input--xlarge" placeholder="Search date (YYYY/MM/DD)" autofocus="autofocus">
-          </form>
-          <h5 class="archive-result text-color-base text-xlarge" data-message-zero="no post found" data-message-one="1 post found" data-message-other="{n} posts found"></h5>
-<section class="boxes">
+        <section class="postShorten-group main-content-wrap">
+          
+          
+            
   
     
-    <div class="archive archive-year box" data-date="2018">
-      <h4 class="archive-title" style="text-decoration: none;">2018</h4>
       
-        <ul class="archive-posts archive-month" data-date="201806">
-          <h5 class="archive-title" style="text-decoration: none;">June</h5>
-          
-            <li class="archive-post archive-day" data-date="20180615">
-              <a class="archive-post-title" href="https://jspaezp.github.io/2018/06/backupsettings/">Backupsettings</a>
-            </li>
-          
-        </ul>
+        
       
-    </div>
+    
   
-</section>
-        </div>
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://jspaezp.github.io/2018/06/backupsettings/">
+          Backupsettings
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-06-15T15:01:43-04:00">
+        
+  
+  
+  
+  
+    15 June 2018
+  
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://jspaezp.github.io/categories/category">category</a>, 
+    
+      <a class="category-link" href="https://jspaezp.github.io/categories/subcategory">subcategory</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <h1 id="setting-up-my-backup-system">Setting up my backup system</h1>
+
+<p>Well &hellip; Long story short, I have currently three computers, a desktop and a laptop running Win10 and a server running Ubuntu server. And I would like all of them sync and use the server for recurrent backups in the form of compressed folders which then will be uploaded to the cloud.</p>
+
+<h1 id="the-plan">The plan</h1>
+
+<p>[this section was written before I started setting up the system]
+I am planning on using &ldquo;syncting&rdquo; for the synchronization part, &ldquo;tar&rdquo; for the generation of the backups and &ldquo;aws glacier&rdquo; as a cloud service.</p>
+
+<h2 id="step-1-setting-up-the-sync-service">Step 1 - Setting up the sync service</h2>
+
+<p>In order to sync my computers I will be using &ldquo;Syncting&rdquo;, which is &hellip; sort of like dropbox but instead of your files being synchronized with a cloud hosted by dropbox, they are shared among your computers.</p>
+
+<p>Since I mentioned dropbox I believe it is worth to mention why I chose this particular service and not dropbox (or any other equivalent). An initial concern of mine when deciding what to chose was the storage capacity I would have, and since I am planning on having enough data to fill a hard drive in this process I did not feel that the 2gb of storage provided by dropbox would be worth it. In addition I considered using &ldquo;resilio sync&rdquo; or &ldquo;google drive&rdquo;, but gdrive does not provide a decent piece of software for linux and installing resilio is awful (ok &hellip; its not that bad but its not suuuper easy).</p>
+
+<p>Now&hellip;. in order to actually set up these services&hellip;</p>
+
+<p>I will be downloading the &ldquo;Sync Trayzor&rdquo; user interface, because I like having a gui enabled and due to the magic of chocolatey <code>cinst synctrayzor -y</code> does the trick.
+Now I have a nice gui to configure my settings, I will be exporting my whole working (documents) and git directories.</p>
+
+<p>NOTE: If you have a windows computer and you are not aware of wat chocolatey is, you should check it out, its a small pece of software that helps you install and keep up to date a lot of pieces of software.</p>
+
+<h2 id="step-2-setting-up-recurrent-backing-up">Step 2 - Setting up recurrent backing up</h2>
+
+<p>There are two components for this task, the first being the actual storage of the data, and the second being how to automate its collection process.
+Since this part will only happen in my linux server, then I&rsquo;m just going to use the simplest thing I can think of, which is a script that compresses the folders into a huge timestamped tar file and stores it in a directory of my choosing.</p>
+
+<p>And here is the script &hellip;</p>
+
+<pre><code class="language-bash">#!/bin/bash
+
+# Generate a timestamp timestamp
+TS=$(date +&quot;%F&quot;)
+
+# Name specification
+BKPNAME=&quot;bkpSebastian-$TS&quot;
+
+# Compress
+# Tar
+
+tar --exclude-caches \
+    --exclude=&quot;/home/sebastian/.*&quot; \
+    --exclude=&quot;/home/sebastian/Docker\\ Containers&quot;\
+    --exclude=&quot;/home/sebastian/Docker Containers&quot;\
+    --exclude=&quot;/home/sebastian/Dropbox&quot; \
+    --exclude=&quot;/home/sebastian/jsppUnal&quot;\
+    --exclude=&quot;/home/sebastian/perl5&quot; \
+    --exclude=&quot;/home/sebastian/R&quot; \
+    --exclude=&quot;/home/sebastian/R_libs&quot; \
+    --exclude=&quot;/home/sebastian/share&quot; \
+    --exclude=&quot;/home/sebastian/tmp&quot; \
+    --exclude=&quot;/home/sebastian/VirtualBox\ VMs&quot; \
+    --exclude=&quot;/home/sebastian/bkp*&quot; \
+    -cjv /home/sebastian
+
+</code></pre>
+
+<p>And all of this will be in a<code>cron</code>job for it to execute on Saturday nights (&hellip; because Saturday) .</p>
+
+<h2 id="step-3-setting-up-the-upload-to-the-cloud">Step 3 - Setting up the upload to the cloud</h2>
+
+<p>Well &hellip; So far I decided to leave this part on hold because the info is already in 3 computers so I do not really need it.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>It all went surprinsingly smootly &hellip; the hardest part by far is automating everything and making sure thre is enough storage in all the computers.</p>
+
+<p>I feel like i should be thinking about ways to make easier the management of selective sync and stuff like that, so my laptop does not need to suffer due to the load of syncing wih my desktop computer.</p>
+
+<p></p>
+      <p>
+        <a href="https://jspaezp.github.io/2018/06/backupsettings/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+          
+
+        </section>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 J Sebastian Paez. All Rights Reserved
+  </span>
+</footer>
+
       </div>
     </div>
     
