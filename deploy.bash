@@ -19,5 +19,5 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push
-git subtree push --prefix=public https://github.com/jspaezp/jspaezp.github.io master
+git subtree push -P public https://github.com/jspaezp/jspaezp.github.io master
 
