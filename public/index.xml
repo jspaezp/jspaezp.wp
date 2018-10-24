@@ -6,10 +6,19 @@
     <description>Recent content on Sebastian Paez&#39;s Webpage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jun 2018 15:01:43 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 17:48:20 -0400</lastBuildDate>
     
 	<atom:link href="https://jspaezp.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Portfolio</title>
+      <link>https://jspaezp.github.io/page/portfolio/</link>
+      <pubDate>Tue, 23 Oct 2018 17:48:20 -0400</pubDate>
+      
+      <guid>https://jspaezp.github.io/page/portfolio/</guid>
+      <description>Volcano Plot Labelling a subset of relevant genesLollipop chart showing over-represented gene ontologies product of three preparations of the same plant sampleHeatmap summarising the changes with respect to a control of a subset of proteinsLabelled Volcano Plot</description>
+    </item>
     
     <item>
       <title>Backupsettings</title>

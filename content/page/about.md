@@ -36,5 +36,7 @@ A small list of things that I feel passionate about/support:
 
 Here should lie an updated version of my CV for any purpose.
 
+[Click Here](/images/Resume21102018.png) to download a version of it. A preview of it is also available at the end of this page.
+
 {{< image classes="fancybox center fig50 nocaption" src="/images/Resume21102018.png" thumbnail-height="300px" title="My Resume" >}}
 <!-- {{< wide-image src="/img/Resume21012018.png" title="My Resume" >}}  -->

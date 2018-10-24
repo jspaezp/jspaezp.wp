@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Sebastian Paez&#39;s Webpage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Jun 2018 15:01:43 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 17:48:20 -0400</lastBuildDate>
     
 	<atom:link href="https://jspaezp.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Data</title>
+      <link>https://jspaezp.github.io/tags/data/</link>
+      <pubDate>Tue, 23 Oct 2018 17:48:20 -0400</pubDate>
+      
+      <guid>https://jspaezp.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>It</title>
       <link>https://jspaezp.github.io/tags/it/</link>
       <pubDate>Fri, 15 Jun 2018 15:01:43 -0400</pubDate>
@@ -44,6 +53,15 @@
       <pubDate>Fri, 15 Jun 2018 15:01:43 -0400</pubDate>
       
       <guid>https://jspaezp.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualzation</title>
+      <link>https://jspaezp.github.io/tags/visualzation/</link>
+      <pubDate>Tue, 23 Oct 2018 17:48:20 -0400</pubDate>
+      
+      <guid>https://jspaezp.github.io/tags/visualzation/</guid>
       <description></description>
     </item>
     
