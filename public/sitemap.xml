@@ -13,12 +13,12 @@
   </url>
   
   <url>
-    <loc>https://jspaezp.github.io/tags/about/</loc>
+    <loc>https://jspaezp.github.io/categories/about/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jspaezp.github.io/categories/about/</loc>
+    <loc>https://jspaezp.github.io/tags/about/</loc>
     <priority>0</priority>
   </url>
   
@@ -48,13 +48,13 @@
   </url>
   
   <url>
-    <loc>https://jspaezp.github.io/tags/data/</loc>
+    <loc>https://jspaezp.github.io/categories/data/</loc>
     <lastmod>2018-10-23T17:48:20-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jspaezp.github.io/categories/data/</loc>
+    <loc>https://jspaezp.github.io/tags/data/</loc>
     <lastmod>2018-10-23T17:48:20-04:00</lastmod>
     <priority>0</priority>
   </url>
